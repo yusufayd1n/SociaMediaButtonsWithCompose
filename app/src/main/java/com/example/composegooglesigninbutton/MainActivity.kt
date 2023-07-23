@@ -1,6 +1,7 @@
 package com.example.composegooglesigninbutton
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
                         progressIndicatorColor = MaterialTheme.colorScheme.primary,
                         backgroundColor = MaterialTheme.colorScheme.surface,
                         onClicked = {
-
+                            Toast.makeText(this@MainActivity, "Google", Toast.LENGTH_SHORT).show()
                         }
                     )
                     Spacer(
@@ -52,10 +53,10 @@ class MainActivity : ComponentActivity() {
                         loadingText = "Creating Account...",
                         icon = R.drawable.ic_facebook_button,
                         borderColor = Color.LightGray,
-                        progressIndicatorColor = MaterialTheme.colorScheme.primary,
+                        progressIndicatorColor = Color.Blue,
                         backgroundColor = MaterialTheme.colorScheme.surface,
                         onClicked = {
-
+                            Toast.makeText(this@MainActivity, "Facebook", Toast.LENGTH_SHORT).show()
                         }
                     )
                     Spacer(
@@ -69,10 +70,10 @@ class MainActivity : ComponentActivity() {
                         loadingText = "Creating Account...",
                         icon = R.drawable.ic_instagram_button,
                         borderColor = Color.LightGray,
-                        progressIndicatorColor = MaterialTheme.colorScheme.primary,
+                        progressIndicatorColor = Color.Magenta,
                         backgroundColor = MaterialTheme.colorScheme.surface,
                         onClicked = {
-
+                            Toast.makeText(this@MainActivity, "Instagram", Toast.LENGTH_SHORT).show()
                         }
                     )
 
@@ -87,10 +88,10 @@ class MainActivity : ComponentActivity() {
                         loadingText = "Creating Account...",
                         icon = R.drawable.ic_twitter_button,
                         borderColor = Color.LightGray,
-                        progressIndicatorColor = MaterialTheme.colorScheme.primary,
+                        progressIndicatorColor = Color.Blue,
                         backgroundColor = MaterialTheme.colorScheme.surface,
                         onClicked = {
-
+                            Toast.makeText(this@MainActivity, "Twitter", Toast.LENGTH_SHORT).show()
                         }
                     )
                 }
