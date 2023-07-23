@@ -31,7 +31,6 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SocialButton(
-    modifier: Modifier = Modifier,
     text: String = "",
     loadingText: String = "",
     icon: Int,
@@ -83,4 +82,20 @@ fun SocialButton(
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun GoogleButtonPreview() {
+    SocialButton(
+        text = "Sign Up with Google",
+        loadingText = "Creating Account...",
+        icon = R.drawable.ic_google_button,
+        borderColor = Color.LightGray,
+        progressIndicatorColor = MaterialTheme.colorScheme.primary,
+        backgroundColor = MaterialTheme.colorScheme.surface,
+        onClicked = {
+
+        }
+    )
 }
